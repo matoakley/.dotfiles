@@ -1,24 +1,24 @@
 [submodule ".vim/bundle/nerdtree"]
 	path = .vim/bundle/nerdtree
-	url = git://github.com:scrooloose/nerdtree.git
+	url = https://github.com:scrooloose/nerdtree.git
 [submodule ".vim/bundle/ack.vim"]
 	path = .vim/bundle/ack.vim
-	url = git://github.com/mileszs/ack.vim.git
+	url = https://github.com/mileszs/ack.vim.git
 [submodule ".vim/bundle/ctrlp.vim"]
 	path = .vim/bundle/ctrlp.vim
-	url = git://github.com:kien/ctrlp.vim.git
+	url = https://github.com:kien/ctrlp.vim.git
 [submodule ".vim/bundle/nerdcommenter"]
 	path = .vim/bundle/nerdcommenter
-	url = git://github.com:scrooloose/nerdcommenter.git
+	url = https://github.com:scrooloose/nerdcommenter.git
 [submodule ".vim/bundle/vim-coffee-script"]
 	path = .vim/bundle/vim-coffee-script
-	url = git://github.com:kchmck/vim-coffee-script.git
+	url = https://github.com:kchmck/vim-coffee-script.git
 [submodule ".vim/bundle/vim-colors-solarized"]
 	path = .vim/bundle/vim-colors-solarized
-	url = git://github.com:altercation/vim-colors-solarized.git
+	url = https://github.com:altercation/vim-colors-solarized.git
 [submodule ".vim/bundle/vim-rails"]
 	path = .vim/bundle/vim-rails
-	url = git://github.com:tpope/vim-rails.git
+	url = https://github.com:tpope/vim-rails.git
 [submodule ".vim/bundle/vim-rubytest"]
 	path = .vim/bundle/vim-rubytest
-	url = git://github.com:janx/vim-rubytest.git
+	url = https://github.com:janx/vim-rubytest.git
