@@ -4,8 +4,6 @@
 export MANPATH=$MANPATH:/opt/local/share/man
 export INFOPATH=$INFOPATH:/opt/local/share/info
 
-[ "$TERM" = "xterm" ] && TERM="xterm-256color"
-
 alias pacman="ssh root@pacman.creativeintent.co.uk"
 alias samus="ssh root@samus.creativeintent.co.uk"
 alias bowser="ssh root@bowser.creativeintent.co.uk"
