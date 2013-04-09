@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/matt/PCS/rails/bread4scrapportal'
+let g:netrw_dirhist_2='/Users/matt/Projects/Caffeine-v1.3'
+let g:netrw_dirhist_3='/Users/matt'
+let g:netrw_dirhist_4='/Users/matt/ITD/rails/inthedugouts'
+let g:netrw_dirhist_5='/Users/matt/PCS/rails/bread4scrapportal'
+let g:netrw_dirhist_6='/Users/matt'
+let g:netrw_dirhist_7='/Users/matt/Projects/Marriage-Millers'
