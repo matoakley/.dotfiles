@@ -4,11 +4,7 @@
 export MANPATH=$MANPATH:/opt/local/share/man
 export INFOPATH=$INFOPATH:/opt/local/share/info
 
-if [ -e /usr/share/terminfo/x/xterm-256color ]; then
-  export TERM='xterm-256color'
-else
-  export TERM='xterm-color'
-fi
+export TERM='xterm-256color'
 
 alias pacman="ssh root@pacman.creativeintent.co.uk"
 alias samus="ssh root@samus.creativeintent.co.uk"
