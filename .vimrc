@@ -41,6 +41,15 @@ set list                          " Show invisible characters
 set backspace=indent,eol,start    " backspace through everything in insert mode
 set noswapfile                    " swap files are a pain in the ass
 
+" List chars
+set listchars=""                  " Reset the listchars
+set listchars=tab:\ \             " a tab should display as "  ", trailing whitespace as "."
+set listchars+=trail:.            " show trailing spaces as dots
+set listchars+=extends:>          " The character to show in the last column when wrap is
+                                  " off and the line continues beyond the right of the screen
+set listchars+=precedes:<         " The character to show in the last column when wrap is
+                                  " off and the line continues beyond the right of the screen
+
 " ctrl p
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_prompt_mappings = {
@@ -73,7 +82,12 @@ let NERDTreeMapActivateNode='<space>'
 map <localleader>tf :NERDTreeFind<cr>
 
 " map ,l in insert mode to hash rocket
-inoremap <localleader>l <space>=><space>
+inoremap <localleader>. <space>=><space>
 
 " scroll window before cursor reaches top/bottom
 set scrolloff=5
+
+" stop vim commenting multiple lines when pasting code containing a comment
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+nnoremap <localleader>l :set nonumber!<cr>
