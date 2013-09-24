@@ -2,6 +2,9 @@ call pathogen#infect()
 syntax on
 filetype plugin indent on
 filetype plugin on
+set encoding=utf-8
+
+set ttimeoutlen=50
 
 set t_Co=256
 colorscheme solarized
@@ -20,9 +23,16 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
 let maplocalleader = ","
-map <localleader>t <Plug>RubyTestRun
-map <localleader>l <Plug>RubyTestRunLast
-map <localleader>r <Plug>RubyFileRun
+
+"map <localleader>t <Plug>RubyTestRun
+"map <localleader>l <Plug>RubyTestRunLast
+"map <localleader>r <Plug>RubyFileRun
+
+" Rspec.vim mappings
+map <localleader>t :call RunCurrentSpecFile()<CR>
+map <localleader>s :call RunNearestSpec()<CR>
+"map <localleader>l :call RunLastSpec()<CR>
+map <localleader>a :call RunAllSpecs()<CR>
 
 " map localleader r to execute as ruby, regardless of content - overrides
 " rubytest plugin
@@ -90,4 +100,15 @@ set scrolloff=5
 " stop vim commenting multiple lines when pasting code containing a comment
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
+" toggle line numbers
 nnoremap <localleader>l :set nonumber!<cr>
+
+" enables vim-airline
+set laststatus=2
+
+" sexy airline arrows
+let g:airline_powerline_fonts=1
+
+" keybindings for xmpfilter
+nmap <localleader>x <Plug>(xmpfilter-run)
+nmap <localleader>z <Plug>(xmpfilter-mark)

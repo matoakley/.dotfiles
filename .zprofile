@@ -1,5 +1,3 @@
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 export MANPATH=$MANPATH:/opt/local/share/man
 export INFOPATH=$INFOPATH:/opt/local/share/info
 
@@ -39,7 +37,9 @@ alias pcap='cd ~/PCS/rails/pcscentraladminportal'
 alias br4sp='cd ~/PCS/rails/bread4scrapportal'
 
 alias tu='ruby vendor/plugins/pcs_core/test/scripts/run_units.rb'
+alias tun='ruby lib/pcs_core/test/scripts/run_units.rb'
 alias ti='ruby vendor/plugins/pcs_core/test/scripts/run_integrations.rb'
+alias tin='ruby lib/pcs_core/test/scripts/run_integrations.rb'
 
 alias lbpv='lbp && mvim .'
 alias brpv='brp && mvim .'

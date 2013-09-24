@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="lukerandall"
+ZSH_THEME="agnoster"
 
 alias tmux="TERM=screen-256color-bce tmux"
 
@@ -43,10 +43,13 @@ alias crawl='~/Projects/crawl/crawl-ref/source/crawl'
 alias make-crawl='make APPLE_GCC=y NO_PKGCONFIG=y CONTRIB_SDL=y TILES=y'
 
 # Customize to your needs...
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/opt/local/bin:$HOME/Projects/android-sdk-mac_x86/platform-tools:$HOME/Projects/android-sdk-mac_x86/tools:/Users/matt/.rvm/gems/ruby-1.8.7-p371/bin:/Users/matt/.rvm/gems/ruby-1.8.7-p371@global/bin:/Users/matt/.rvm/rubies/ruby-1.8.7-p371/bin:/Users/matt/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/System/Library/Frameworks/Ruby.framework/Versions/Current/usr/bin:$PATH"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+export PATH="/Users/matt/.rvm/bin:/usr/local/Cellar:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/opt/local/bin:$HOME/Projects/android-sdk-mac_x86/platform-tools:$HOME/Projects/android-sdk-mac_x86/tools:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/System/Library/Frameworks/Ruby.framework/Versions/Current/usr/bin:$PATH"
 export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:/usr/local/oracle/instantclient_11_2:$DYLD_LIBRARY_PATH" # disabled as it breaks brew
 export SQLPATH="/usr/local/oracle/instantclient_11_2"
 export TNS_ADMIN="/usr/local/oracle/network/admin"
 export NLS_LANG="ENGLISH_UNITED KINGDOM.UTF8"
 export PATH=$PATH:$DYLD_LIBRARY_PATH
+
+# Enable zsh-syntax-highlighting plugin
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
