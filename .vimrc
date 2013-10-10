@@ -39,13 +39,13 @@ map <localleader>a :call RunAllSpecs()<CR>
 nnoremap <localleader>r :!ruby %<cr>
 
 " 2 space tabs
-:set tabstop=2
-:set shiftwidth=2
-:set expandtab
-:retab
+set tabstop=2
+set shiftwidth=2
+set expandtab
+retab
 
 set nocompatible      " Use vim, no vi defaults
-set number                        " Line numbers
+set rnu                        " Realtive line numbers
 set nowrap                        " don't wrap lines
 set list                          " Show invisible characters
 set backspace=indent,eol,start    " backspace through everything in insert mode
@@ -91,7 +91,7 @@ let NERDTreeMapActivateNode='<space>'
 " show the current file in a new tree
 map <localleader>tf :NERDTreeFind<cr>
 
-" map ,l in insert mode to hash rocket
+" map ,. in insert mode to hash rocket
 inoremap <localleader>. <space>=><space>
 
 " scroll window before cursor reaches top/bottom
