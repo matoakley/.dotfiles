@@ -43,3 +43,6 @@
 [submodule ".vim/bundle/vim-hamlc"]
 	path = .vim/bundle/vim-hamlc
 	url = https://github.com/hiukkanen/vim-hamlc.git
+[submodule ".vim/bundle/vim-rspec"]
+	path = .vim/bundle/vim-rspec
+	url = https://github.com/thoughtbot/vim-rspec.git
