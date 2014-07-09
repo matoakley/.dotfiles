@@ -31,7 +31,7 @@ DISABLE_AUTO_TITLE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git svn ruby gem npm rails rails3 rvm tmux)
+plugins=(git ruby gem npm rails tmux rbenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -53,5 +53,3 @@ export PATH=$PATH:$DYLD_LIBRARY_PATH
 
 # Enable zsh-syntax-highlighting plugin
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

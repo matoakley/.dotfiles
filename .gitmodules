@@ -22,3 +22,9 @@
 [submodule ".vim/bundle/vim-rubytest"]
 	path = .vim/bundle/vim-rubytest
 	url = git://github.com/janx/vim-rubytest.git
+[submodule "powerline-fonts"]
+	path = powerline-fonts
+	url = https://github.com/Lokaltog/powerline-fonts.git
+[submodule "solarized"]
+	path = solarized
+	url = git://github.com/altercation/solarized.git
