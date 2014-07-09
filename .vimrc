@@ -46,6 +46,7 @@ retab
 
 set nocompatible      " Use vim, no vi defaults
 set rnu                        " Realtive line numbers
+set number
 set nowrap                        " don't wrap lines
 set list                          " Show invisible characters
 set backspace=indent,eol,start    " backspace through everything in insert mode
@@ -101,7 +102,7 @@ set scrolloff=5
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " toggle line numbers
-nnoremap <localleader>l :set nonumber!<cr>
+nnoremap <localleader>l :set nonu! nornu!<cr>
 
 " enables vim-airline
 set laststatus=2

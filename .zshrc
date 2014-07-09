@@ -40,10 +40,10 @@ unalias sl
 alias sl='nocorrect sl'
 
 alias crawl='~/Projects/crawl/crawl-ref/source/crawl'
-alias make-crawl='make APPLE_GCC=y NO_PKGCONFIG=y CONTRIB_SDL=y TILES=y'
+alias make-crawl='cd ~/Projects/crawl/crawl-ref/source; make APPLE_GCC=y NO_PKGCONFIG=y CONTRIB_SDL=y TILES=y'
 
 # Customize to your needs...
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 export PATH="/Users/matt/.rvm/bin:/usr/local/Cellar:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/opt/local/bin:$HOME/Projects/android-sdk-mac_x86/platform-tools:$HOME/Projects/android-sdk-mac_x86/tools:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/System/Library/Frameworks/Ruby.framework/Versions/Current/usr/bin:$PATH"
 export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:/usr/local/oracle/instantclient_11_2:$DYLD_LIBRARY_PATH" # disabled as it breaks brew
 export SQLPATH="/usr/local/oracle/instantclient_11_2"
@@ -53,3 +53,5 @@ export PATH=$PATH:$DYLD_LIBRARY_PATH
 
 # Enable zsh-syntax-highlighting plugin
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
