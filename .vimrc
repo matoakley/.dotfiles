@@ -29,6 +29,14 @@ set shiftwidth=2
 set shiftround
 set expandtab
 
+" Make it obvious where 80 characters is
+set textwidth=80
+set colorcolumn=+1
+
+" Numbers
+set number
+set numberwidth=5
+
 " Configure netrw for directory navigation
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
