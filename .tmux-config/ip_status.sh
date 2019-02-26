@@ -1,1 +1,1 @@
-curl http://ip.ruu.nu; echo
+curl https://api.ipify.org; echo

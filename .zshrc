@@ -9,6 +9,10 @@ ZSH_THEME="agnoster"
 
 alias tmux="TERM=screen-256color-bce tmux"
 
+# this allows calling rake tasks with arguments
+# WITHOUT having to wrap it in quotes
+unsetopt nomatch
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -35,16 +39,8 @@ plugins=(git ruby gem npm rails tmux rbenv)
 
 source $ZSH/oh-my-zsh.sh
 
-# enable the love train
-unalias sl
-alias sl='nocorrect sl'
-
-alias crawl='~/Projects/crawl/crawl-ref/source/crawl'
-alias make-crawl='cd ~/Projects/crawl/crawl-ref/source; make APPLE_GCC=y NO_PKGCONFIG=y CONTRIB_SDL=y TILES=y'
-
 # Customize to your needs...
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-export PATH="/Users/matt/.rvm/bin:/usr/local/Cellar:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/opt/local/bin:$HOME/Projects/android-sdk-mac_x86/platform-tools:$HOME/Projects/android-sdk-mac_x86/tools:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/System/Library/Frameworks/Ruby.framework/Versions/Current/usr/bin:$PATH"
+export PATH="/usr/local/Cellar:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/opt/local/bin:$HOME/Projects/android-sdk-mac_x86/platform-tools:$HOME/Projects/android-sdk-mac_x86/tools:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/System/Library/Frameworks/Ruby.framework/Versions/Current/usr/bin:$PATH"
 export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:/usr/local/oracle/instantclient_11_2:$DYLD_LIBRARY_PATH" # disabled as it breaks brew
 export SQLPATH="/usr/local/oracle/instantclient_11_2"
 export TNS_ADMIN="/usr/local/oracle/network/admin"
@@ -53,3 +49,20 @@ export PATH=$PATH:$DYLD_LIBRARY_PATH
 
 # Enable zsh-syntax-highlighting plugin
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+eval "$(rbenv init -)"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+export NVM_DIR="/Users/m/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export PATH="$PATH:$HOME/.yarn/bin:$HOME/.nvm/versions/node/v6.2.2/bin"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/m/.sdkman"
+[[ -s "/Users/m/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/m/.sdkman/bin/sdkman-init.sh"
+export PATH="/usr/local/opt/qt@5.5/bin:$PATH"
+export PATH="/usr/local/opt/libxml2/bin:$PATH"
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
