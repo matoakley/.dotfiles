@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'thoughtbot/vim-rspec'
 Plug 'jgdavey/tslime.vim'
 Plug 'tpope/vim-rails'
+Plug 'tpope/vim-bundler'
 Plug 'ctrlpvim/ctrlp.vim'
 
 call plug#end()
@@ -36,6 +37,12 @@ set colorcolumn=+1
 " Numbers
 set number
 set numberwidth=5
+
+" Switch syntax highlighting on, when the terminal has colors
+" Also switch on highlighting the last used search pattern.
+if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
+  syntax on
+endi
 
 " Configure netrw for directory navigation
 let g:netrw_banner = 0
