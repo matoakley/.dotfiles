@@ -44,6 +44,12 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
 endi
 
+" Display extra whitespace
+set list listchars=tab:»·,trail:·,nbsp:·
+
+" Use one space, not two, after punctuation.
+set nojoinspaces
+
 " Configure netrw for directory navigation
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
